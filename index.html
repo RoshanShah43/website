@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Handicraft Seller</title>
+  <link rel="stylesheet" href="style.css">
+<!--login-->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+  <div id="main-container">
+
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div>📞 <a href="tel:9841267335">7894561230</a></div>
+      <div>SHIPPING AVAILABLE ALL OVER THE WORLD.</div>
+     <div>
+        <a href="#" onclick="login(1)">LOGIN</a>
+      </div>
+    </div>
+
+  
+
+        
+    <!-- Navigation -->
+   
+   <div class="navbar">
+     <div class="logo">Organic & Handicraft Seller</div>
+     <div class="nav-links">
+        <a href="#">HOME</a>
+       <a href="#">ABOUT US</a>
+       <a href="#">PRODUCTS</a>
+       <a href="#">ADDRESS</a>
+       <a href="#">CONTACT US</a>
+      </div>
+      <div class="right-icons">
+        <a href="#"><img src="search.png" alt="Search" width="20"/></a>
+        <a href="#"><img src="ca.png" alt="Cart" width="20"/> (0)</a>
+     </div>
+   </div>
+
+   <!-- Hero Section -->
+   <div class="hero" id="hero">
+     <h1>Organic & Handicraft Items</h1>
+     <p>Collection of Organic & Handicrafted Items of Nepal</p>
+      <a href="/products" class="btn">PRODUCTS</a>
+    </div>
+
+   <script src="main.js"></script>
+
+  </div>
+
+  <!--login-->
+
+  <div id="login-popup">
+    <section id="log">
+            <div class="form-box">
+                <div class="form-value">
+                    <form onsubmit="Login(0)">
+
+                        <h2>Login</h2>
+                        <div class="inputbox"> <ion-icon name="mail-outline"></ion-icon> <input type="email" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="inputbox"> 
+                          <ion-icon name="lock-closed-outline"></ion-icon> 
+                          <input type="password" required> <label>Password</label> 
+                        </div>
+                        <div class="forget"> 
+                          <label>
+                            <input type="checkbox">Remember Me
+                          </label> <a href="#">Forgot Password</a> 
+                        </div> 
+                        <button type="submit">Log In</button>
+                        <div class="register">
+                            <p>Don't have an account? <a href="#">Sign Up</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </section> 
+  </div>
+</body>
+</html>
