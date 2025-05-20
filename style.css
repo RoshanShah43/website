@@ -9,14 +9,21 @@ body {
 }
 html, body {
   height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 
 #main-container {
-  position: absolute;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
 }
 #login-popup {
   position: fixed;       /* Fix it relative to viewport */
@@ -235,19 +242,21 @@ a {
 
 /* Hero Section */
 .hero {
-  position: relative;
-  min-height: 80vh;
+  width: 100%;
+  min-height: 100vh;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   color: #fff;
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 2rem;
   transition: background-image 1s ease-in-out;
+  box-sizing: border-box;
 }
+
 .hero h1 {
   font-size: 6vw;
   margin-bottom: 0.5rem;
